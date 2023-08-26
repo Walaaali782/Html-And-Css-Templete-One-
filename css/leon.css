@@ -1,6 +1,5 @@
 :root{
   --main-color:#F48FB1;
-  /* --main-color:#10cab7; */
    --secondary-color: #2c4755;
     --section-padding: 60px;
     --section-background: #f6f6f6;
@@ -34,7 +33,7 @@ body{
   /* meduim */
   @media (min-width: 992px) {
     .container {
-      width: 950px;
+      width: 970px;
     }
   }
   
