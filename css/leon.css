@@ -26,21 +26,21 @@ body{
 
 /* Small  */
 @media (min-width: 768px) {
-    .continer {
+      .container {
       width: 750px;
     }
   }
 
   /* meduim */
   @media (min-width: 992px) {
-    .continer {
+    .container {
       width: 950px;
     }
   }
   
 /* large  */
   @media (min-width: 1200px) {
-    .continer {
+    .container {
       width: 1170px;
     }
   }
