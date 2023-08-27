@@ -1,5 +1,6 @@
 :root{
   --main-color:#F48FB1;
+  /* --main-color:#10cab7; */
    --secondary-color: #2c4755;
     --section-padding: 60px;
     --section-background: #f6f6f6;
@@ -25,7 +26,7 @@ body{
 
 /* Small  */
 @media (min-width: 768px) {
-      .container {
+    .container {
       width: 750px;
     }
   }
@@ -43,6 +44,7 @@ body{
       width: 1170px;
     }
   }
+  /* ////////////////////// */
   .header{
     padding: 20px ;
   }
@@ -78,7 +80,7 @@ body{
 }
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: 0.3s;
+  transition: .3s;
 }
 .header .links .icon span:last-child {
   width: 100%;
@@ -111,7 +113,7 @@ top: -20px;
 }
 .header .links ul li a {
 display: block;
-padding: 15px;
+padding: 10px;
 text-decoration: none;
 color: #333;
 transition: 0.3s;
@@ -135,13 +137,13 @@ padding-left: 25px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%) ;
+  transform: translate(-50% ,-50%) ;
   text-align: center;
   width: 320px;
   max-width: 100%;
 }
 .landing .intro-text h1 {
-  margin: 0 ;
+  /* margin: 0 ; */
   font-weight: bold;
   font-size: 50px;
   color: var(--main-color);
@@ -162,15 +164,15 @@ padding-left: 25px;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   grid-gap: 20px;
 }
-.container {
+/* .container {
   width: 970px;
-}
+}  الخطأ الاول*/
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 .features .feat{
   padding: 20px;
   text-align: center;
@@ -221,36 +223,35 @@ margin-top: -20px ;
 .servies .specail-contact{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin-top: 100px;
 }
 
-.servies .specail-contact .col .srv{
+.servies .specail-contact .srv{
   display: flex;
-  margin-bottom: 20px ;
+  margin-bottom: 40px ;
 
 }
 @media (max-width: 767px){
-  .servies .specail-contact .col .srv{
+  .servies .specail-contact .srv{
     flex-direction: column;
     text-align: center;
   }}
-  .servies .specail-contact .col .srv i {
+  .servies .specail-contact .srv i {
     color: var(--main-color);
-   
     flex-basis: 60px ;
   }
-  .servies .specail-contact .col .srv .text {
+  .servies .specail-contact .srv .text {
    flex: 1;
   }
-  .servies .specail-contact .col .srv .text h3  {
-  margin: 0;
+  .servies .specail-contact .srv .text h3  {
+  margin: 0 0 20px;
    }
 
-   .servies .specail-contact .col .srv .text  p {
-    color: #333;
+   .servies .specail-contact .srv .text  p {
+    color: #531e1e;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.8;
    }
 .servies .specail-contact .images {
   text-align: center;
@@ -259,7 +260,7 @@ margin-top: -20px ;
 .servies .specail-contact .images::before {
  content: "";
  background-color: var(--secondary-color);
- width: 80px;
+ width: 100px;
  height: calc(100% + 100px );
  top: -50px;
  position: absolute;
@@ -267,8 +268,8 @@ right: 0;
 z-index: -1;
 }
 .servies .specail-contact .images  img{
-  width: 260px;
-  height: 300px;
+  width: 280px;
+  /* height: 300px; */
 }
 @media (max-width: 1199px) {
   .image-column {
@@ -320,7 +321,7 @@ flex-wrap: wrap;
 justify-content: space-between;
 }
 @media (max-width: 991px) {
-  .about .about-content {
+  .about .about-contact {
     flex-direction: column;
     text-align: center;
   }
@@ -330,11 +331,11 @@ justify-content: space-between;
   position: relative;
   width: 250px;
   height: 375px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 @media (max-width: 991px) {
-  .about .about-content .image {
+  .about .about-contact .images {
     margin: 0 auto 60px;
   }
 }
@@ -342,10 +343,10 @@ justify-content: space-between;
   content: "";
   background-color: #f1f4f7;
   width: 80px;
-  height: calc(100% + 40px );
+  height: calc(100% + 80px );
   top: -40px;
   position: absolute;
- left: 20px ;
+ left: -20px ;
  z-index: -1;
 
 }
@@ -363,8 +364,8 @@ justify-content: space-between;
 }
 
 @media (max-width: 991px) {
-  .about .about-content .image::before,
-  .about .about-content .image::after {
+   .about-contact .images::before,
+   .about-contact .images::after {
     display: none;
   }
 }
@@ -432,6 +433,7 @@ justify-content: space-between;
   color: var(--main-color);
   font-weight: bold;
 }
+
 
 
 
